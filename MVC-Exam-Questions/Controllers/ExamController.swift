@@ -15,6 +15,7 @@ class ExamController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        questionView.questionTextLabel.text = "Is Earth round?"
+        let question = Question(text: "Is Earth round?", point: 10, isCorrect: true)
+        questionView.questionTextLabel.text = question.text
     }
 }
