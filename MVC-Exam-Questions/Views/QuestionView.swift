@@ -25,6 +25,9 @@ class QuestionView: UIView {
     
     private func commonInit() {
         Bundle.main.loadNibNamed("QuestionView", owner: self, options: nil)
+        
+        addSubview(contentView)
+        
         contentView.frame = self.bounds // content view will fill the QuestionView
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // Inside the parent view, content view will have flexible width and height
     }
