@@ -16,24 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTe-2t-LAE" customClass="QuestionView" customModule="MVC_Exam_Questions" customModuleProvider="target">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="5Uw-KY-vtk"/>
-                                    <constraint firstAttribute="height" constant="128" id="Vbm-i3-0Xl"/>
-                                </constraints>
-                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Nl-pd-9De">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V2x-wO-ZFn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CTe-2t-LAE" firstAttribute="centerY" secondItem="QoY-6o-FAf" secondAttribute="centerY" id="09A-vM-s9o"/>
-                            <constraint firstItem="CTe-2t-LAE" firstAttribute="centerX" secondItem="QoY-6o-FAf" secondAttribute="centerX" id="4A6-j1-6Tk"/>
+                            <constraint firstItem="V2x-wO-ZFn" firstAttribute="bottom" secondItem="4Nl-pd-9De" secondAttribute="bottom" id="4xc-Fp-HJN"/>
+                            <constraint firstItem="4Nl-pd-9De" firstAttribute="leading" secondItem="V2x-wO-ZFn" secondAttribute="leading" id="Qt6-00-7jI"/>
+                            <constraint firstItem="4Nl-pd-9De" firstAttribute="top" secondItem="V2x-wO-ZFn" secondAttribute="top" id="TS9-UF-9ce"/>
+                            <constraint firstItem="V2x-wO-ZFn" firstAttribute="trailing" secondItem="4Nl-pd-9De" secondAttribute="trailing" id="Ul9-Bn-5ml"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="questionView" destination="CTe-2t-LAE" id="npX-V4-jyX"/>
+                        <outlet property="tableView" destination="4Nl-pd-9De" id="M79-h9-lrs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82z-eS-gY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

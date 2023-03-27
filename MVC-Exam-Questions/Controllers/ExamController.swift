@@ -10,12 +10,29 @@ import UIKit
 
 class ExamController: UIViewController {
     
-    @IBOutlet weak var questionView: QuestionView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let question = Question(text: "Is Earth round?", point: 10, isCorrect: true)
-        questionView.questionTextLabel.text = question.text
+        tableView.delegate = self
+        tableView.dataSource = self
+       
     }
+}
+
+extension ExamController: UITableViewDelegate {
+    
+}
+
+extension ExamController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionTableViewCell", for: indexPath)
+        return cell
+    }
+    
+    
 }
