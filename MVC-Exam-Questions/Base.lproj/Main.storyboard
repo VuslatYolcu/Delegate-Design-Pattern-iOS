@@ -118,8 +118,8 @@
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-SX-uHy">
                                                     <rect key="frame" x="25" y="7" width="369" height="32.5"/>
                                                     <segments>
+                                                        <segment title="True"/>
                                                         <segment title="False"/>
-                                                        <segment title="Second"/>
                                                     </segments>
                                                 </segmentedControl>
                                             </subviews>

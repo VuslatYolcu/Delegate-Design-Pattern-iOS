@@ -9,10 +9,14 @@ import Foundation
 
 class QuestionsService {
     
+    private var questions = [Question]()
+    
     func getAll() -> [Question] {
-        let questions = [Question(text: "Is Earth round?", point: 10, isCorrect: true),
-                         Question(text: "Is 2+2 = 4", point: 10, isCorrect: true),
-                         Question(text: "Is 2*10 = 100", point: 10, isCorrect: false)]
+        
         return questions
+    }
+    
+    func add(question: Question) {
+        return questions.append(question)
     }
 }

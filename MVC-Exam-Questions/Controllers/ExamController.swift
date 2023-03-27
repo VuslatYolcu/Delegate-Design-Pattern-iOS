@@ -23,6 +23,17 @@ class ExamController: UIViewController {
         questions = questionsService.getAll()
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nc = segue.destination as? UINavigationController else { return }
+        
+        guard let addQuestionTVC = nc.viewControllers.first as? AddQuestionTableViewController else {
+            return
+        }
+        
+        addQuestionTVC.delegate = self
+    }
+    
 }
 
 extension ExamController: UITableViewDelegate {
@@ -40,5 +51,18 @@ extension ExamController: UITableViewDataSource {
         return cell
     }
     
-    
+}
+
+extension ExamController: AddQuestionDelegate {
+    func addQuestionDidSaveQuestion(question: Question, controller: UIViewController) {
+        questionsService.add(question: question)
+        controller.dismiss(animated: true, completion: nil)
+        
+        questions = questionsService.getAll()
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
+    }
 }
