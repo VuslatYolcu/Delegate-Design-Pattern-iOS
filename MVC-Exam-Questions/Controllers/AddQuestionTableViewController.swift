@@ -10,6 +10,7 @@ import UIKit
 
 protocol AddQuestionDelegate {
     func addQuestionDidSaveQuestion(question: Question, controller: UIViewController)
+    func addQuestionDidClose(controller: UIViewController)
 }
 
 class AddQuestionTableViewController: UITableViewController {
@@ -33,7 +34,8 @@ class AddQuestionTableViewController: UITableViewController {
     }
     
     @IBAction func close() {
-        
+        //self.dismiss(animated: true, completion: nil)
+        self.delegate.addQuestionDidClose(controller: self)
     }
     
     @IBAction func save() {

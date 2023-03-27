@@ -63,6 +63,9 @@ extension ExamController: AddQuestionDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-        
+    }
+    
+    func addQuestionDidClose(controller: UIViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }
