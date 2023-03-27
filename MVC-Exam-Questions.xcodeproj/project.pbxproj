@@ -16,6 +16,7 @@
 		11156A0129D0A8C20010BF77 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11156A0029D0A8C20010BF77 /* QuestionView.swift */; };
 		11156A0329D0A9280010BF77 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11156A0229D0A9280010BF77 /* QuestionView.xib */; };
 		11156A0529D0AC2E0010BF77 /* ExamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11156A0429D0AC2E0010BF77 /* ExamController.swift */; };
+		11DC6D0829D1A5BC00600152 /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC6D0729D1A5BC00600152 /* QuestionsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		11156A0029D0A8C20010BF77 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		11156A0229D0A9280010BF77 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		11156A0429D0AC2E0010BF77 /* ExamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamController.swift; sourceTree = "<group>"; };
+		11DC6D0729D1A5BC00600152 /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		111569E629D0A53A0010BF77 /* MVC-Exam-Questions */ = {
 			isa = PBXGroup;
 			children = (
+				11DC6D0629D1A5AF00600152 /* Services */,
 				111569FD29D0A6BD0010BF77 /* Controllers */,
 				111569FC29D0A6B60010BF77 /* Views */,
 				111569FB29D0A6A50010BF77 /* Models */,
@@ -98,6 +101,14 @@
 				11156A0429D0AC2E0010BF77 /* ExamController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11DC6D0629D1A5AF00600152 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11DC6D0729D1A5BC00600152 /* QuestionsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				11156A0129D0A8C20010BF77 /* QuestionView.swift in Sources */,
 				11156A0529D0AC2E0010BF77 /* ExamController.swift in Sources */,
 				111569FF29D0A8150010BF77 /* Question.swift in Sources */,
+				11DC6D0829D1A5BC00600152 /* QuestionsService.swift in Sources */,
 				111569E829D0A53A0010BF77 /* AppDelegate.swift in Sources */,
 				111569EA29D0A53A0010BF77 /* SceneDelegate.swift in Sources */,
 			);
