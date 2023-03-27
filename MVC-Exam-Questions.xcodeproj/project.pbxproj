@@ -17,6 +17,7 @@
 		11156A0329D0A9280010BF77 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11156A0229D0A9280010BF77 /* QuestionView.xib */; };
 		11156A0529D0AC2E0010BF77 /* ExamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11156A0429D0AC2E0010BF77 /* ExamController.swift */; };
 		11DC6D0829D1A5BC00600152 /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC6D0729D1A5BC00600152 /* QuestionsService.swift */; };
+		11DC6D0A29D1AE9E00600152 /* AddQuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DC6D0929D1AE9E00600152 /* AddQuestionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		11156A0229D0A9280010BF77 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		11156A0429D0AC2E0010BF77 /* ExamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamController.swift; sourceTree = "<group>"; };
 		11DC6D0729D1A5BC00600152 /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
+		11DC6D0929D1AE9E00600152 /* AddQuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				11156A0429D0AC2E0010BF77 /* ExamController.swift */,
+				11DC6D0929D1AE9E00600152 /* AddQuestionTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				11156A0529D0AC2E0010BF77 /* ExamController.swift in Sources */,
 				111569FF29D0A8150010BF77 /* Question.swift in Sources */,
 				11DC6D0829D1A5BC00600152 /* QuestionsService.swift in Sources */,
+				11DC6D0A29D1AE9E00600152 /* AddQuestionTableViewController.swift in Sources */,
 				111569E829D0A53A0010BF77 /* AppDelegate.swift in Sources */,
 				111569EA29D0A53A0010BF77 /* SceneDelegate.swift in Sources */,
 			);
